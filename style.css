@@ -1,11 +1,22 @@
 body {
 	margin: 0px;
 	overflow: hidden;
+	background-color: rgb(52, 52, 52);
 }
 
 h1, p {
 	font-family: sans-serif;
 	text-align: center;
+	color: white;
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 4em;
+}
+
+p {
+	font-size: 1em;
 }
 
 .center {

@@ -1,0 +1,17 @@
+body {
+	margin: 0px;
+	overflow: hidden;
+}
+
+h1, p {
+	font-family: sans-serif;
+	text-align: center;
+}
+
+.center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100vw;
+}

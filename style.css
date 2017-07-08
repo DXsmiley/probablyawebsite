@@ -35,29 +35,3 @@ h1, p {
 	Normal orange: #F76503;
 	Dimmed orange: #944511;
 */
-
-.spinner1 {
-	border-radius: 50%;
-	width: 70vh;
-	height: 70vh;
-	border: 25px solid transparent;
-	border-right-color: #944511;
-	border-top-color: #944511;
-	border-bottom-color: #944511;
-	position: static;
-}
-
-.spinner2 {
-	border-radius: 50%;
-	width: 40vh;
-	height: 40vh;
-	border: 40px solid transparent;
-	border-left-color: #944511;
-	border-top-color: #944511;
-	position: static;
-}
-
-.background {
-	position: absolute;
-	z-index: -1;
-}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Curiosity</title>
+	<style type="text/css">
+		@keyframes flicker {
+			0%   {left:   0px; top:   0px; color: #eb003f;}
+			39%  {left:   0px; top:   0px; color: #eb003f;}
+			40%  {left: -10px; top:  -4px; color: cyan;}
+			41%  {left:  10px; top:   4px; color: cyan;}
+			42%  {left:   0px; top:   0px; color: #eb003f;}
+			50%  {left:   0px; top:   0px; color: #eb003f;}
+			51%  {left:  10px; top:  -4px; color: cyan;}
+			52%  {left: -10px; top:   4px; color: cyan;}
+			53%  {left:   0px; top:   0px; color: #eb003f;}
+			100% {left:   0px; top:   0px; color: #eb003f;}
+		}
+		@font-face {
+			font-family: "telemarines";
+			src: url(telemarines1.ttf) format("truetype");
+		}
+		body {
+			font-family: sans-serif;
+			background-color: black;
+		}
+		h1 {
+			position: relative;
+			left: 0px;
+			top: 0px;
+			font-family: "telemarines";
+			color: #eb003f;
+			text-align: center;
+			font-size: 3.2em;
+			animation-name: flicker;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+		}
+		p {
+			color: #727272;
+			font-size: 1.1em;
+			line-height: 30px;
+			text-align: justify;
+			font-weight: lighter;
+		}
+		div.wrapper {
+			max-width: 600px;
+			margin: 0px auto;
+		}
+	</style>
+</head>
+<body>
+<div class="wrapper">
+	<h1>Killed the Cat</h1>
+	<p>"Killed the Cat" (2017) is a poster artwork created by Declan McDonnell. The prompt for the work was the following: <i>"The word glitch refers to an unpredictable irregularity in a system - digital and analogue alike. Explore the creative possibilities of glitch."</i></p>
+	<p>The work consists of a grid of QR codes. The QR codes can be scanned to access links, however all links point to websites which are known to contain malware such as trojans, spyware, or engage in phishing attacks. The exception to this is the bright pink QR code, which links to this page. Ironically, the pink QR code can't be scanned by some readers, while the others are much more accessible.</p>
+	<p>Malware, almost by definition, exploits flaws, bugs, and glitches in computer systems in order to compromise them. These flaws in the system emerge due to oversights in the design - which are almost unavoidable due to the complexities of these systems.</p>
+	<p>The grid of QR codes appears almost like static. While the arrangement of the pixels within each code is highly systematic, to humans it appears random, like static. It blurs the line between what we consider organised and chaotic.</p>
+	<p>The title of the work is derived from the phrase "curiosity killed the cat", which alludes to the danger behind the QR codes. Cats are also strongly associated with internet culture, and sites hosting malware and other dangerous items act contrary to interests of the broader internet populous.</p>
+	<p>The artist makes the following comment on the work: <i>"It's kind of like looking at the lion enclosure at the zoo. There's some very dangerous things on the other side of the fence, but you're perfectly safe unless you enter their domain. Except all the lions are invisible so the only indicators of their existence are the enclosure and the signs telling you not to pet them."</i></p>
+</div>
+</body>
+</html>

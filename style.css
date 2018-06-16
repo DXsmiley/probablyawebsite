@@ -129,3 +129,10 @@ div.trimthis .fullscreen-bg {
 	z-index: 1;
 	overflow: hidden;
 }
+
+a, a:visited {
+	text-decoration: none;
+	color: #33A5ED;
+	font-weight: lighter;
+	font-size: 80%;
+}

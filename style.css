@@ -1,138 +1,65 @@
-div, body {
-	margin: 0px;
+* {
 	box-sizing: border-box;
+	font-family: 'Krub', sans-serif;
 }
 
 body {
-	background-color: #f8f8f8;
-}
-
-h1, h2, h3 {
-	font-family: 'Raleway', sans-serif;
 	margin: 0px;
+	overflow-x: hidden;
 }
 
-h2 {
-	margin-top: 20px;
-}
-
-h1 {
-	font-size: 4em;
-	vertical-align: top;
-	font-weight: lighter;
-	padding: 0px;
-	display: inline-block;
-	/*background-color: #f8f8f8;*/
-	/*padding: 10px 15px 10px 15px;*/
-}
-
-h2 {
-	font-size: 3em;
-}
-
-div.work {
-	background-color: #353535;
-	margin-top: 15px;
-	margin-bottom: 15px;
-	margin-right: -30px;
-	padding: 20px 50px 20px 50px;
-	margin-left: -8px;
-	border-left: 8px solid #33A5ED;
+div.screen {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+	top: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 30px;
+	background: rgb(117,25,175);
+	background: linear-gradient(45deg, rgba(117,25,175,1) 0%, rgba(0,212,255,1) 100%);
 	color: white;
 }
 
-h3 {
-	font-size: 2em;
+div.portfolio {
+	max-width: 600px;
+	width: 100vw;
+	margin: 0px auto;
+	min-height: 100vh;
+	padding: 30px;
 }
 
-p {
-	font-weight: 400;
-	font-family: 'Montserrat', sans-serif;
+div.portfolio h1 {
+	position: relative;
+	left: -12px;
+	border-left: 2px solid #7519af;
+	padding-left: 10px;
 }
 
-div.title {
-	text-align: center;
-	vertical-align: top;
-	background-color: #33A5ED;
-	padding: 40px;
-}
-
-div.body {
-	min-height: 20vh;
-	display: flex;
-	align-content: center;
-	justify-content: center;
-	padding: 30px 10px 30px 10px;
-	background-color: #f8f8f8;
-}
-
-div.body-inner {
-	max-width: 700px;
-	min-width: 200px;
-}
-
-div.footer {
-	background-color: darkgrey;
-}
-
-div.yeah {
+#bullshit {
+	max-width: calc(100vw - 60px);
+	width: 350px;
+	background-color: white;
+	color: black;
 	display: inline-block;
+	padding: 10px;
+	margin-top: 5px;
 }
 
-div.water-bottom, div.water-top {
-	padding: 20px;
+div.screen a, div.screen a:visited {
+	color: white;
+	font-size: 16px;
 }
 
-/*
-div.water-bottom {
-	border-left: 4px solid #353535;
-	border-right: 4px solid #353535;
-	border-bottom: 4px solid #353535;
-	background-color: #33A5ED;
-	border-bottom-left-radius: 30px;
-	border-bottom-right-radius: 30px;
+div.portfolio a, div.portfolio a:visited {
+	color: #367eda;
+	font-size: 16px;
 }
 
-div.water-top {
-	border-left: 4px solid #353535;
-	border-right: 4px solid #353535;
-}
-*/
-
-/* Video background */
-
-.fullscreen-bg {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: -1;
-}
-
-.fullscreen-bg__video {
-	overflow: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-}
-
-div.trimthis {
-	overflow: hidden;
-	min-height: 8px;
-	width: 100%;
-}
-
-div.trimthis .fullscreen-bg {
-	z-index: 1;
-	overflow: hidden;
-}
-
-a, a:visited {
-	text-decoration: none;
-	color: #33A5ED;
-	font-weight: lighter;
-	font-size: 80%;
+span.downarrow {
+	font-size: 40px;
+	position: relative;
+	top: 8px;
 }

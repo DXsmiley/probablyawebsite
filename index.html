@@ -5,37 +5,102 @@
 		<title>¯\_(ツ)_/¯</title>
 		<link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet"> 
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/solid.css" integrity="sha384-VGP9aw4WtGH/uPAOseYxZ+Vz/vaTb1ehm1bwx92Fm8dTrE+3boLfF1SpAtB1z7HW" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/brands.css" integrity="sha384-rf1bqOAj3+pw6NqYrtaE1/4Se2NBwkIfeYbsFdtiR6TQz0acWiwJbv1IM/Nt/ite" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" integrity="sha384-1rquJLNOM3ijoueaaeS5m+McXPJCGdr5HcA03/VHXxcp2kX2sUrQDmFc3jR5i/C7" crossorigin="anonymous">
 	</head>
 	<body>
-		<div class="screen">
+		<div class="splash">
 			<div>
 				<h1>Hi I'm Declan</h1>
 				<h2>I'm an expert in <span id="bullshit"></span></h2>
-				<p><a href="https://github.com/dxsmiley">Look at my Github</a></p>
-				<p><a href="#" id="email" onclick="showEmail()">Send me email</a></p>
-				<p><span class="downarrow">⬇</span> Portfolio that way</p>
+				<p><a href="https://github.com/dxsmiley"><i class="fixit fab fa-github"></i> Look at my Github</a></p>
+				<p><a href="#" onclick="showEmail()"><i class="fixit fas fa-envelope"></i> <span id="email">Send me electronic mail</span></a></p>
+				<p><i class="fixit fas fa-angle-double-down"></i> Portfolio that way</p>
 			</div>
 		</div>
 		<div class="portfolio">
-			<h1>Things I know</h1>
-			<ul>
-				<li>Python</li>
-				<li>Javascript</li>
-				<li>Scala</li>
-				<li>HTML / CSS</li>
-			</ul>
-			<h1>Things I've made</h1>
-			<p><a target="_blank" href="http://rtex.probablyaweb.site">LaTeX rendering microservice</a></p>
-			<p><a target="_blank" href="https://blankpaper.space">Digital Whiteboard</a></p>
-			<h1>Things I like</h1>
-			<ul>
-				<li>Designing and implementing programming languages</li>
-				<li>Property-based testing</li>
-				<li>Ethical work practices</li>
-				<li>Monads</li>
-			</ul>
-			<h1>If you want to hire me</h1>
-			<p>I've heard that nerd sniping me with new feature of a programming language is a good way to start. Use the links above to get in touch.</p>
+			<div class="header">
+				<h1>Things I <span class="purple">know</span></h1>
+			</div>
+			<div class="cardholder">
+				<div>
+					<span class="title">Python</span>
+					<span>My go-to language for personal projects.</span>
+				</div>
+				<div>
+					<span class="title">Javascript</span>
+					<span>I've also worked with Typescript.</span>
+				</div>
+				<div>
+					<span class="title">Scala</span>
+					<span>Does "batteries included" better than python.</span>
+				</div>
+				<div>
+					<span class="title">HTML and CSS</span>
+					<span>Ironic that the industry's tool of choice for UIs was originally designed for static content.</span>
+				</div>
+				<div>
+					<span class="title">Git</span>
+					<span>I've been complemented on my descriptive commit messages a grand total of once.</span>
+				</div>
+				<div>
+					<span class="title">My limits</span>
+					<span>and when to ask for help.</span>
+				</div>
+			</div>
+			<div class="header">
+				<h1>Things I've <span class="purple">made</span></h1>
+			</div>
+			<div class="cardholder">
+				<div class="wide">
+					<a target="_blank" href="http://rtex.probablyaweb.site"><span class="title"><i class="fas fa-link"></i> LaTeX rendering microservice</span></a>
+					<span>Takes in LaTeX and spits out PDFs or images. Free to use, with a simple, documented API.</span>
+				</div>					
+				<div class="wide">
+					<a target="_blank" href="http://blankpaper.space"><span class="title"><i class="fas fa-link"></i> Digital Whiteboard</span></a>
+					<span>As if there weren't enough of these already. Uses socket.io for real-time communication.</span>
+				</div>
+				<div class="wide">
+					<a target="_blank" href="http://franklin-decides.herokuapp.com/"><span class="title"><i class="fas fa-link"></i> Franklin decides</span></a>
+					<span>Quickly select a random nearby place to get food! Works best on mobile. Designed and built by a team of myself and five others for Unihack Sydney 2018, <a href="https://devpost.com/software/franklin-decides" target="_blank">winning best user interface, and second place overall</a>.</span>
+				</div>
+				<div class="wide">
+					<a target="_blank" href="https://dxsmiley.github.io/mathbot"><span class="title"><i class="fas fa-link"></i> Discord Mathematics Bot</span></a>
+					<span>A discord bots that preforms an array of mathematical functions. This ongoing project has taught me a lot about talking to users, as well as scaling deployments to meet demand.</span>
+				</div>
+			</div>
+			<div class="header">
+				<h1>Things I <span class="purple">like</span></h1>
+			</div>
+			<div class="cardholder">
+				<div>
+					<span class="title">Designing and implementing programming languages</span>
+				</div>
+				<div>
+					<span class="title">Property-based testing</span>
+				</div>
+				<div>
+					<span class="title">Ethical work practices</span>
+				</div>
+				<div>
+					<span class="title">Monads</span>
+					<span>(monoids are alright too I guess)</span>
+				</div>
+				<div>
+					<span class="title">Seeing my work being people happiness</span>
+				</div>
+				<div>
+					<span class="title">Peeking behind the curtain to see how things work</span>
+					<!-- And I guess this means I like _you_ now too <3 -->
+				</div>
+			</div>
+			<div class="header">
+				<h1>If you want to <span class="purple">hire</span> me</h1>
+			</div>
+			<div class="cardholder">
+				<p>I've heard that nerd sniping me with new feature of a programming language is a good way to start. Use the links above to get in touch.</p>
+			</div>
 		</div>
 	</body>
 	<script>
@@ -101,7 +166,7 @@
 			return adjectives() + ' ' + nouns();
 		}
 
-		var goal = generateText();
+		var goal = "random text generation"
 		var current = '';
 
 		function write() {

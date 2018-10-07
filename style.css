@@ -8,7 +8,7 @@ body {
 	overflow-x: hidden;
 }
 
-div.screen {
+div.splash {
 	width: 100vw;
 	height: 100vh;
 	overflow: hidden;
@@ -18,29 +18,19 @@ div.screen {
 	justify-content: center;
 	align-items: center;
 	padding: 30px;
-	background: rgb(117,25,175);
-	background: linear-gradient(45deg, rgba(117,25,175,1) 0%, rgba(0,212,255,1) 100%);
 	color: white;
+	background: linear-gradient(45deg, rgba(117,25,175,1) 0%, rgba(0,212,255,1) 100%);
 }
 
-div.portfolio {
-	max-width: 600px;
-	width: 100vw;
-	margin: 0px auto;
-	min-height: 100vh;
-	padding: 30px;
-}
-
-div.portfolio h1 {
-	position: relative;
-	left: -12px;
-	border-left: 2px solid #7519af;
-	padding-left: 10px;
+div.splash a, div.splash a:visited {
+	color: white;
+	font-size: 16px;
+	text-decoration: none;
 }
 
 #bullshit {
+	width: 400px;
 	max-width: calc(100vw - 60px);
-	width: 350px;
 	background-color: white;
 	color: black;
 	display: inline-block;
@@ -48,18 +38,84 @@ div.portfolio h1 {
 	margin-top: 5px;
 }
 
-div.screen a, div.screen a:visited {
+div.portfolio {
+	max-width: 800px;
+	width: 100vw;
+	margin: 0px auto;
+	min-height: 100vh;
+	padding: 30px;
+	background-color: white;
+}
+
+div.portfolio div.header {
+	display: flex;
+	justify-content: center;
+}
+
+span.purple {
+	color: #7519af;
+}
+
+div.portfolio h1 {
+	padding-left: 10px;
+	/*border-bottom: 2px solid #7519af;*/
+}
+
+div.cardholder {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-bottom: 60px;
+}
+
+div.cardholder div {
+	transition: 0.2s;
+	width: 220px;
+	margin: 5px;
+	border: 1px #ddd solid;
+	padding: 10px;
+	display: inline-block;
+}
+
+div.cardholder div.wide {
+	width: 340px;
+}
+
+/*div.cardholder div:hover {
 	color: white;
-	font-size: 16px;
+	border-color: white;
+	background: rgb(117,25,175);
+}*/
+
+span.title {
+	margin-bottom: 3px;
+}
+
+span.title + span {
+	font-size: 14px;
+}
+
+span.title::before {
+	border-bottom: 1px solid black;
+	position: relative;
+
+}
+
+span.title {
+	display: block;
 }
 
 div.portfolio a, div.portfolio a:visited {
-	color: #367eda;
+	color: teal;
 	font-size: 16px;
+	text-decoration: none;
 }
 
-span.downarrow {
-	font-size: 40px;
+i.fixit {
+	width: 20px;
+	text-align: center;
+	font-size: 20px;
 	position: relative;
-	top: 8px;
+	top: 2px;
 }

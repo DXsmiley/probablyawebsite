@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pet fox</title>
+	<style type="text/css">
+		body {
+			margin: 0px;
+			box-sizing: border-box;
+		}
+		div.container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			overflow: hidden;
+			width: 100vw;
+		}
+		#fox {
+			position: relative;
+			top: 0px;
+			right: 0px;
+			display: block;
+		}
+		#novibrate {
+			max-width: 300px;
+			display: none;
+			font-family: sans-serif;
+			text-align: justify;
+			margin: 30px auto;
+		}
+	</style>
+	<script type="text/javascript">
+		function init() {
+			window.ondragstart = () => false;
+			const fox = document.getElementById('fox');
+			const warning = document.getElementById('novibrate');
+			let isVibrating = false;
+
+			fox.addEventListener('touchstart', function() {
+				fox.src='./owo.png';
+			});
+
+			fox.addEventListener('touchmove', function () {
+				if (isVibrating === false) {
+					console.log('vibrating');
+					if (window.navigator.vibrate(200)) {
+						warning.style.display = 'none';
+					} else {
+						warning.style.display = 'inline-block';
+					}
+					isVibrating = true;
+					setTimeout(function() {isVibrating = false;}, 210);
+				}
+				fox.style.top = `${Math.random() * 20}px`;
+				fox.style.left = `${Math.random() * 20}px`;
+			}, false);
+
+			fox.addEventListener('touchend', function() {
+				fox.src='./asleep.png';
+			});
+
+			fox.addEventListener('touchcancel', function() {
+				fox.src='./asleep.png';
+			});
+		}
+	</script>
+</head>
+<body onload="init()">
+	<div class="container">
+		<div>
+			<img src="./asleep.png" id="fox" />
+			<p id="novibrate">Vibrations aren't working right now. Maybe wait a few second to see if it clears itself up.</p>
+		</div>
+	</div>
+</body>
+</html>

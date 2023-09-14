@@ -19,7 +19,12 @@ div.splash {
 	align-items: center;
 	padding: 30px;
 	color: white;
-	background: linear-gradient(45deg, rgba(117,25,175,1) 0%, rgba(0,212,255,1) 100%);
+	background: linear-gradient(
+		45deg,
+		rgb(154, 31, 255) 0%,
+		rgb(241, 86, 255) 50%,
+		rgb(233, 81, 157) 100%
+	);
 }
 
 div.splash a, div.splash a:visited {

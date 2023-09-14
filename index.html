@@ -13,7 +13,7 @@
 		<div class="splash">
 			<div>
 				<h1>Hi I'm Ashley</h1>
-				<h2>I'm an expert in <span id="bullshit"><noscript>adding &lt;noscript&gt; tags</noscript></span></h2>
+				<h2>and I'm making <span id="bullshit"><noscript>adding &lt;noscript&gt; tags</noscript></span></h2>
 				<p><a href="https://github.com/dxsmiley"><i class="fixit fab fa-github"></i> Look at my Github</a></p>
 				<p><a href="#" onclick="showEmail()"><i class="fixit fas fa-envelope"></i> <span id="email">Send me electronic mail <noscript>(declan ᵈᵒᵗ leo ᵈᵒᵗ mcdonnell ᵃᵗ gmail ᵈᵒᵗ com)</noscript></span></a></p>
 				<p><i class="fixit fas fa-angle-double-down"></i> Portfolio that way</p>
@@ -33,8 +33,8 @@
 					<span>I've also worked with Typescript.</span>
 				</div>
 				<div>
-					<span class="title">Scala</span>
-					<span>Downside is that I now rely on IntelliJ.</span>
+					<span class="title">SQL + Postgres</span>
+					<span>I love it when my data stays where I put it.</span>
 				</div>
 				<div>
 					<span class="title">HTML and CSS</span>
@@ -45,8 +45,8 @@
 					<span>I've been complemented on my descriptive commit messages a grand total of once.</span>
 				</div>
 				<div>
-					<span class="title">My limits</span>
-					<span>and when to ask for help.</span>
+					<span class="title">And so much more!</span>
+					<span>It's chaos in here please help.</span>
 				</div>
 			</div>
 			<div class="header">
@@ -62,8 +62,8 @@
 					<span>As if there weren't enough of these already. Uses socket.io for real-time communication.</span>
 				</div>
 				<div class="wide">
-					<a target="_blank" href="http://franklin-decides.herokuapp.com/"><span class="title"><i class="fas fa-link"></i> Franklin decides</span></a>
-					<span>Quickly select a random nearby place to get food! Works best on mobile. Designed and built by a team of myself and five others for Unihack Sydney 2018, <a href="https://devpost.com/software/franklin-decides" target="_blank">winning best user interface, and second place overall</a>.</span>
+					<a target="_blank" href="https://devpost.com/software/franklin-decides"><span class="title"><i class="fas fa-link"></i> Franklin decides</span></a>
+					<span>Quickly select a random nearby place to get food! Works best on mobile. Designed and built by a team of myself and five others for Unihack Sydney 2018, <a href="https://devpost.com/software/franklin-decides" target="_blank">winning best user interface, and second place overall</a>. Service no longer online.</span>
 				</div>
 				<div class="wide">
 					<a target="_blank" href="https://dxsmiley.github.io/mathbot"><span class="title"><i class="fas fa-link"></i> Discord Mathematics Bot</span></a>
@@ -125,48 +125,51 @@
 			}
 		}
 
-		const adjectives = shufflebag([
-			'big',
-			'functional',
-			'artificial',
-			'distributed',
-			'analytical',
-			'cloud',
-			'machine',
-			'crypto',
-			'the',
-			'structural',
-			'mobile',
-			'human-centric',
-			'secure',
-			'rest-based',
-			'responsive',
-			'deleting'
+		const invention = shufflebag([
+			'ridesharing',
+			'streaming',
+			'content',
+			'"art"',
+			'the "internet"',
+			'phones',
+			'social media',
+			'unicycles',
+			'trains',
+			'fire',
+			'emotions',
+			'money',
+			'new tech',
+			'web 3.0',
+			'dogs',
+			'problems',
+			'ethernet',
+			'javascript',
 		]);
 
-		const nouns = shufflebag([
-			'data',
-			'programming',
-			'intelligence',
-			'learning',
-			'blockchain',
-			'ethernet cables',
-			'ux',
-			'javascript',
-			'internet of things',
-			'buzzwords',
-			'anarchy',
-			'networks',
-			'technology',
-			'red tape',
-			'bureaucracy',
+		const audience = shufflebag([
+			' for people',
+			' for dogs',
+			' for nobody',
+			' on the blockchain',
+			' but better',
+			' but worse',
+			' 2.0',
+			' (federated)',
+			' over IP',
+			' with DRM',
+			' without limits',
+			', within reason',
+			' monetizable',
+			' friendlier',
+			' but *punk*',
+			'?',
 		]);
 
 		function generateText() {
-			return adjectives() + ' ' + nouns();
+			return invention() + audience();
 		}
 
-		var goal = "random text generation"
+		var goal = "the best website"
 		var current = '';
 
 		function write() {
